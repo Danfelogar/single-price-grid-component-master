@@ -1,0 +1,137 @@
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright_Yellow: hsl(71, 73%, 54%);
+--Light_Gray: hsl(204, 43%, 93%);
+--Grayish_Blue: hsl(218, 22%, 67%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    Font-size: 1.6rem;
+    background-color: #e0ebf3;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    margin:7.2rem auto;
+    width: 31.2rem;
+    height: 72.4rem;
+}
+.container_1{
+    width: 31.2rem;
+    height: 26.7rem;
+    background-color: white;
+    border-radius: 1rem 1rem 0 0;
+    padding: 3rem 2.6rem 3.4rem 2.3rem;
+}
+.container_1 h1 {
+    margin-bottom: 2.7rem;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+.container_1 .text_1 {
+    margin-bottom: 2.1rem;
+    font-weight: 700;
+    color: var(--Bright_Yellow);
+}
+.container_1 .text_12 {
+    justify-self: center;
+    font-weight: 400;
+    color: var(--Grayish_Blue);
+    line-height: 2rem;
+}
+.container_2{
+    width: 31.2rem;
+    height: 23rem;
+    background-color: var(--Cyan);
+    padding: 2.7rem 2.6rem 2.4rem 2.6rem;
+}
+.container_2 h1 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.container_2 .text2  {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.4rem;
+}
+.container_2 .text2 span {
+    font-size: 1.6rem;
+    opacity: 0.7;
+    position: absolute;
+    left: 9rem;
+    top: 1.2rem;
+}
+.container_2 .text22 {
+    font-size: 400;
+    color: white;
+    opacity: 0.9;
+    padding-bottom: 2rem;
+}
+.container_2 button {
+    width: 26.3rem;
+    height: 4.9rem;
+    color:white;
+    background-color: var(--Bright_Yellow);
+    border: none;
+    border-radius: 0.5rem;
+}
+.container_3{
+    width: 31.2rem;
+    height: 22.8rem;
+    background-color: var(--Cyan);
+    opacity: 0.75;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2.7rem 0.6rem 2.7rem 2.7rem;
+}
+.container_3 .title_3 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.container_3 p {
+    color: white;
+    opacity: 0.7;
+    font-weight: 400;
+    padding-right: 10rem;
+    font-size: 1.5rem;
+}
+@media (min-width: 800px) {
+    .main_container{
+        position: relative;
+        display:flex;
+        margin: 16.2rem auto;
+        width: 63.6rem;
+        height: 47.6rem;
+    }
+    .container_1{
+        width: 62.6rem;
+        height: 21.3rem;
+        order: 1;
+    }
+    .container_2{
+        width: 31.3rem;
+        height: 23rem;
+        order: 2;
+        border-radius: 0 0 0 1rem;
+    }
+    .container_3{
+        position: absolute;
+        left: 31.3rem;
+        top: 21.3rem;
+        order: 3;
+        border-radius: 0 0 1rem 0;
+        width: 31.3rem;
+        height: 23rem;
+    }
+}
